@@ -1,0 +1,18 @@
+diff --git a/dist/index.d.mts b/dist/index.d.mts
+index 968c56a866c7ada2e93e9326f9fa86f8a211cc47..042ab3f37603fa6ccac3e4f08ae9ba340687f34e 100644
+--- a/dist/index.d.mts
++++ b/dist/index.d.mts
+@@ -1,5 +1,5 @@
+-import { C as CacheError, S as Store, E as Entry } from './interface-VaLsbZa8.mjs';
+ import { Result } from '@unkey/error';
++import { C as CacheError, E as Entry, S as Store } from './interface-VaLsbZa8.mjs';
+ export { M as Metrics } from './metrics-PJjLxZ-U.mjs';
+ 
+ interface Context {
+@@ -128,4 +128,5 @@ declare class TieredStore<TNamespace extends string, TValue> implements Store<TN
+     remove(namespace: TNamespace, key: string): Promise<Result<void, CacheError>>;
+ }
+ 
+-export { type Cache, CacheError, type Context, DefaultStatefulContext, Namespace, TieredStore, createCache };
++export { CacheError, createCache, DefaultStatefulContext, Namespace, TieredStore, type Cache, type Context, type Entry, type Store };
++

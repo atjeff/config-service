@@ -1,0 +1,17 @@
+{
+  "name": "@repo/config-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy src/server.ts",
+    "deploy:prod": "wrangler deploy src/server.ts --env=prod",
+    "dev": "wrangler dev src/server.ts --port=60100 --inspector-port=9100 --show-interactive-dev-session=false"
+  },
+  "dependencies": {
+    "@repo/config-service": "workspace:*",
+    "hono": "^4.4.13"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*"
+  }
+}

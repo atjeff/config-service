@@ -1,0 +1,11 @@
+name = "config-api"
+main = "src/server.ts"
+compatibility_date = "2024-04-27"
+account_id = "45195e253eabea5b7f996b6eccefaa2c"
+
+[[services]]
+binding = "CONFIG_SERVICE"
+service = "config-service"
+
+[vars]
+ADMIN_AUTH_TOKEN="admin"
